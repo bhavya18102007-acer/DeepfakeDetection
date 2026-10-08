@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Datasets (large files, do not commit)
+data/train/
+data/val/
+data/test/
+data/*.zip
+data/*.tar*
+data/raw/
+*.mp4
+*.avi
+*.mov
+
+# Large Model Checkpoints (except lightweight ONNX face detector)
+models/*.pth
+models/*.pt
+!models/README.md
+!models/face_detection_yunet_2023mar.onnx
+
+# Outputs and experiment runs
+outputs/*.png
+outputs/*.csv
+outputs/*.json
+!outputs/README.md
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Pytest and coverage
+.pytest_cache/
+.coverage
+htmlcov/
